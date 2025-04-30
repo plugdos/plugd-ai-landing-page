@@ -1,5 +1,5 @@
 
-import { Shield, ShieldCheck, ShieldX } from "lucide-react";
+import { Shield, ShieldCheck, ShieldX, Check } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
