@@ -1,5 +1,5 @@
 
-import { CircleArrowRight, Phone, Users, FileSearch, Flask, Rocket, Settings } from "lucide-react";
+import { CircleArrowRight, Phone, Users, FileSearch, Beaker, Rocket, Settings } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -31,7 +31,7 @@ export function HowItWorks() {
       title: "Free Proof of Concept",
       description:
         "We develop a custom, no-cost proof of concept to demonstrate the value and feasibility of your automation solution.",
-      icon: Flask
+      icon: Beaker
     },
     {
       title: "Demo & Feedback",
