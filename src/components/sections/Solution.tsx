@@ -1,6 +1,6 @@
 
-import { BadgeCheck } from "lucide-react";
-import { IconBadge } from "@/components/ui/badge";
+import { CheckCircle } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export function Solution() {
   const features = [
@@ -27,41 +27,33 @@ export function Solution() {
   ];
 
   return (
-    <section id="solutions" className="py-20 md:py-32">
+    <section id="solutions" className="py-20 md:py-32 bg-secondary/50">
       <div className="container px-4 md:px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 mb-2">
-                <BadgeCheck className="h-5 w-5 text-primary/80" />
-                <span className="text-sm font-medium">SOLUTION</span>
-              </div>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tighter">
-                Meet plugd.ai – Your AI Workforce
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                An intelligent automation platform that uses AI agents to execute full business
-                workflows with minimal human intervention.
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              {features.map((feature, index) => (
-                <div key={index} className="flex items-start gap-3">
-                  <IconBadge icon={BadgeCheck} variant="secondary" className="mt-0.5">
-                    {feature.title}
-                  </IconBadge>
-                  <p className="text-muted-foreground text-sm">{feature.description}</p>
-                </div>
-              ))}
-            </div>
+        <div className="flex flex-col items-center text-center mb-12 md:mb-16">
+          <div className="inline-flex items-center gap-2 mb-4">
+            <CheckCircle className="h-5 w-5 text-primary/80" />
+            <span className="text-sm font-medium">SOLUTION</span>
           </div>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">
+            Meet plugd.ai – Your AI Workforce
+          </h2>
+          <p className="text-muted-foreground max-w-[700px]">
+            An intelligent automation platform that uses AI agents to execute full business
+            workflows with minimal human intervention.
+          </p>
+        </div>
 
-          <div className="aspect-square rounded-2xl overflow-hidden border shadow-soft">
-            <div className="w-full h-full bg-gradient-to-br from-secondary to-secondary/30 flex items-center justify-center">
-              <p className="text-muted-foreground">Solution Illustration</p>
-            </div>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {features.map((feature, index) => (
+            <Card key={index} className="hover-scale border shadow-soft">
+              <CardHeader>
+                <CardTitle>{feature.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">{feature.description}</p>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
