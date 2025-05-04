@@ -1,5 +1,5 @@
 
-import { CircleArrowRight, Database, Workflow, Layers, ArrowsUpFromLine, FileJson, FileXml, File, FileArchive } from "lucide-react";
+import { CircleArrowRight, Database, Workflow, Layers, ArrowsUpFromLine, FileJson, File, FileArchive } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHeader, TableHead, TableRow } from "@/components/ui/table";
 
@@ -53,7 +53,7 @@ export function Production() {
                 </div>
                 
                 <div className="flex flex-col items-center p-4 bg-muted/30 rounded-lg border border-dashed">
-                  <FileXml className="h-10 w-10 text-orange-500 mb-2" />
+                  <File className="h-10 w-10 text-orange-500 mb-2" />
                   <span className="text-xs font-mono">invoice-4567.xml</span>
                   <div className="mt-2 text-xs font-mono p-2 bg-muted rounded w-full overflow-hidden">
                     {"<inv><id>CLM4567</id><amt>3600</amt>..."}
