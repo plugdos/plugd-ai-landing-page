@@ -1,5 +1,5 @@
 
-import { CircleArrowRight, Database, Workflow, Layers, ArrowsUpFromLine, FileJson, File, FileArchive, Sparkles, Brain, Cpu, LucideIcon, MessageSquare, Image as ImageIcon, Mail, LineChart, CheckCircle2, Clock, AlertTriangle } from "lucide-react";
+import { CircleArrowRight, Database, Workflow, Layers, ArrowsUpFromLine, FileJson, File, FileArchive, Sparkles, Brain, Cpu, LucideIcon, MessageSquare, Image as ImageIcon, Mail, LineChart, CheckCircle2, Clock, AlertTriangle, Api } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHeader, TableHead, TableRow } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
@@ -58,11 +58,13 @@ export function Production() {
                 Clients typically use a variety of systems for different business functions, creating data silos that don't communicate with each other.
               </p>
               
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-8">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 mb-8">
                 <SystemIcon icon={Database} label="ERP System" color="bg-blue-600" />
                 <SystemIcon icon={MessageSquare} label="CRM System" color="bg-green-600" />
                 <SystemIcon icon={FileJson} label="Procurement" color="bg-purple-600" />
                 <SystemIcon icon={LineChart} label="Analytics" color="bg-orange-600" />
+                <SystemIcon icon={Mail} label="Email Systems" color="bg-indigo-600" />
+                <SystemIcon icon={Api} label="APIs" color="bg-rose-600" />
               </div>
               
               <div className="flex items-center justify-center">
