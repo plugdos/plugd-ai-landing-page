@@ -148,11 +148,11 @@ export function Production() {
           </Card>
 
           {/* Card 3: AI-powered workflow */}
-          <Card className="overflow-hidden border-2 border-primary/20 relative">
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-primary text-primary-foreground text-xs font-semibold py-1 px-4 rounded-full">
+          <Card className="overflow-hidden border-2 border-primary/20 relative mt-8 pt-5">
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 bg-primary text-primary-foreground text-xs font-semibold py-1 px-4 rounded-full">
               AI-Powered Workflow
             </div>
-            <CardContent className="p-6 pt-10">
+            <CardContent className="p-6">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className="order-2 md:order-1">
                   <div className="space-y-4">
