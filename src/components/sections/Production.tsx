@@ -1,3 +1,4 @@
+
 import { CircleArrowRight, Database, Workflow, Layers, ArrowsUpFromLine, FileJson, File, FileArchive, Sparkles, Brain, Cpu, LucideIcon, MessageSquare, Image as ImageIcon, Mail, LineChart, CheckCircle2, Clock, AlertTriangle, ServerCog } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHeader, TableHead, TableRow } from "@/components/ui/table";
@@ -148,72 +149,74 @@ export function Production() {
           </Card>
 
           {/* Card 3: AI-powered workflow */}
-          <Card className="overflow-hidden border-2 border-primary/20 relative mt-8 pt-5">
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 bg-primary text-primary-foreground text-xs font-semibold py-1 px-4 rounded-full">
+          <div className="relative mt-16">
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 bg-primary text-primary-foreground text-xs font-semibold py-1 px-4 rounded-full">
               AI-Powered Workflow
             </div>
-            <CardContent className="p-6">
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div className="order-2 md:order-1">
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-3 p-3 bg-primary/5 rounded-lg border border-primary/10 hover:bg-primary/10 transition-colors">
-                      <div className="flex items-center justify-center min-w-10 h-10 rounded-full bg-primary/10">
-                        <Brain className="h-5 w-5 text-primary" />
+            <Card className="overflow-hidden border-2 border-primary/20 pt-6">
+              <CardContent className="p-6">
+                <div className="grid md:grid-cols-2 gap-8 items-center">
+                  <div className="order-2 md:order-1">
+                    <div className="space-y-4">
+                      <div className="flex items-center gap-3 p-3 bg-primary/5 rounded-lg border border-primary/10 hover:bg-primary/10 transition-colors">
+                        <div className="flex items-center justify-center min-w-10 h-10 rounded-full bg-primary/10">
+                          <Brain className="h-5 w-5 text-primary" />
+                        </div>
+                        <div>
+                          <h4 className="text-sm font-medium">Document Understanding</h4>
+                          <p className="text-xs text-muted-foreground mt-1">Identifies document types and extracts relevant information regardless of format</p>
+                        </div>
                       </div>
-                      <div>
-                        <h4 className="text-sm font-medium">Document Understanding</h4>
-                        <p className="text-xs text-muted-foreground mt-1">Identifies document types and extracts relevant information regardless of format</p>
+                      
+                      <div className="flex items-center gap-3 p-3 bg-primary/5 rounded-lg border border-primary/10 hover:bg-primary/10 transition-colors">
+                        <div className="flex items-center justify-center min-w-10 h-10 rounded-full bg-primary/10">
+                          <Cpu className="h-5 w-5 text-primary" />
+                        </div>
+                        <div>
+                          <h4 className="text-sm font-medium">Data Extraction & Normalization</h4>
+                          <p className="text-xs text-muted-foreground mt-1">Converts all formats to a standardized structure with consistent field naming</p>
+                        </div>
+                      </div>
+                      
+                      <div className="flex items-center gap-3 p-3 bg-primary/5 rounded-lg border border-primary/10 hover:bg-primary/10 transition-colors">
+                        <div className="flex items-center justify-center min-w-10 h-10 rounded-full bg-primary/10">
+                          <Layers className="h-5 w-5 text-primary" />
+                        </div>
+                        <div>
+                          <h4 className="text-sm font-medium">Entity Matching & Enrichment</h4>
+                          <p className="text-xs text-muted-foreground mt-1">Connects related data across systems and fills in missing information</p>
+                        </div>
+                      </div>
+                      
+                      <div className="flex items-center gap-3 p-3 bg-primary/5 rounded-lg border border-primary/10 hover:bg-primary/10 transition-colors">
+                        <div className="flex items-center justify-center min-w-10 h-10 rounded-full bg-primary/10">
+                          <Workflow className="h-5 w-5 text-primary" />
+                        </div>
+                        <div>
+                          <h4 className="text-sm font-medium">Intelligent Decision Engine</h4>
+                          <p className="text-xs text-muted-foreground mt-1">Applies business rules and machine learning to determine next actions</p>
+                        </div>
                       </div>
                     </div>
-                    
-                    <div className="flex items-center gap-3 p-3 bg-primary/5 rounded-lg border border-primary/10 hover:bg-primary/10 transition-colors">
-                      <div className="flex items-center justify-center min-w-10 h-10 rounded-full bg-primary/10">
-                        <Cpu className="h-5 w-5 text-primary" />
-                      </div>
-                      <div>
-                        <h4 className="text-sm font-medium">Data Extraction & Normalization</h4>
-                        <p className="text-xs text-muted-foreground mt-1">Converts all formats to a standardized structure with consistent field naming</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-center gap-3 p-3 bg-primary/5 rounded-lg border border-primary/10 hover:bg-primary/10 transition-colors">
-                      <div className="flex items-center justify-center min-w-10 h-10 rounded-full bg-primary/10">
-                        <Layers className="h-5 w-5 text-primary" />
-                      </div>
-                      <div>
-                        <h4 className="text-sm font-medium">Entity Matching & Enrichment</h4>
-                        <p className="text-xs text-muted-foreground mt-1">Connects related data across systems and fills in missing information</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-center gap-3 p-3 bg-primary/5 rounded-lg border border-primary/10 hover:bg-primary/10 transition-colors">
-                      <div className="flex items-center justify-center min-w-10 h-10 rounded-full bg-primary/10">
-                        <Workflow className="h-5 w-5 text-primary" />
-                      </div>
-                      <div>
-                        <h4 className="text-sm font-medium">Intelligent Decision Engine</h4>
-                        <p className="text-xs text-muted-foreground mt-1">Applies business rules and machine learning to determine next actions</p>
+                  </div>
+                  
+                  <div className="flex justify-center order-1 md:order-2">
+                    <div className="relative flex items-center justify-center w-48 h-48">
+                      <div className="absolute w-full h-full rounded-full border-4 border-primary/30 border-dashed animate-spin" style={{ animationDuration: '10s' }}></div>
+                      <div className="absolute w-3/4 h-3/4 rounded-full border-4 border-primary/20 border-dashed animate-spin" style={{ animationDuration: '7s', animationDirection: 'reverse' }}></div>
+                      <div className="z-10 flex items-center justify-center w-32 h-32 rounded-full bg-primary/10 p-2">
+                        <Brain className="h-16 w-16 text-primary animate-pulse" />
                       </div>
                     </div>
                   </div>
                 </div>
                 
-                <div className="flex justify-center order-1 md:order-2">
-                  <div className="relative flex items-center justify-center w-48 h-48">
-                    <div className="absolute w-full h-full rounded-full border-4 border-primary/30 border-dashed animate-spin" style={{ animationDuration: '10s' }}></div>
-                    <div className="absolute w-3/4 h-3/4 rounded-full border-4 border-primary/20 border-dashed animate-spin" style={{ animationDuration: '7s', animationDirection: 'reverse' }}></div>
-                    <div className="z-10 flex items-center justify-center w-32 h-32 rounded-full bg-primary/10 p-2">
-                      <Brain className="h-16 w-16 text-primary animate-pulse" />
-                    </div>
-                  </div>
+                <div className="flex items-center justify-center mt-8">
+                  <ArrowsUpFromLine className="h-10 w-10 text-primary animate-bounce" />
                 </div>
-              </div>
-              
-              <div className="flex items-center justify-center mt-8">
-                <ArrowsUpFromLine className="h-10 w-10 text-primary animate-bounce" />
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+          </div>
 
           {/* Card 4: Actionable Data */}
           <Card className="overflow-hidden border-2 border-green-200 dark:border-green-800/30">
