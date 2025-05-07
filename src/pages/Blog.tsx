@@ -1,11 +1,21 @@
 
-import { Helmet } from "react-helmet";
+import { useEffect } from "react";
 import { Navbar } from "@/components/navigation/Navbar";
 import { BlogHeader } from "@/components/blog/BlogHeader";
 import { FeaturedArticle } from "@/components/blog/FeaturedArticle";
 import { ArticleCard } from "@/components/blog/ArticleCard";
 
 const Blog = () => {
+  // Set page title when component mounts
+  useEffect(() => {
+    document.title = "Blog - plugd.ai | AI-Powered Workflow Automation";
+    // You can also set meta description here if needed
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Explore articles, insights, and case studies about AI-powered workflow automation from plugd.ai');
+    }
+  }, []);
+
   // Sample blog article data
   const featuredArticle = {
     id: "001",
@@ -78,15 +88,7 @@ const Blog = () => {
   ];
 
   return (
-    <div className="min-h-screen">
-      <Helmet>
-        <title>Blog - plugd.ai | AI-Powered Workflow Automation</title>
-        <meta 
-          name="description" 
-          content="Explore articles, insights, and case studies about AI-powered workflow automation from plugd.ai" 
-        />
-      </Helmet>
-      
+    <div className="min-h-screen">      
       <Navbar />
       
       <main className="pt-24 pb-20">
