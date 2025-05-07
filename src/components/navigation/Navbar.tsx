@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,13 +29,14 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center gap-8">
-          <a href="/" className="text-2xl font-bold">
+          <Link to="/" className="text-2xl font-bold">
             plugd<span className="text-primary/80">.ai</span>
-          </a>
+          </Link>
           <nav className="hidden md:flex space-x-6">
             <a href="#solutions" className="text-sm hover:text-primary/80">Solutions</a>
             <a href="#how-it-works" className="text-sm hover:text-primary/80">How it Works</a>
             <a href="#use-cases" className="text-sm hover:text-primary/80">Use Cases</a>
+            <Link to="/blog" className="text-sm hover:text-primary/80">Blog</Link>
             <a href="#enterprise" className="text-sm hover:text-primary/80">Enterprise</a>
           </nav>
         </div>
